@@ -1,11 +1,11 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx
   labels:
     app: webserver
   annotations:
-    kubernetes.io/change-cause:  “Update nginx to 1.13.10"
+    kubernetes.io/change-cause:  “Update nginx to 1.13.10"
 spec:
   replicas: 3
   selector:
